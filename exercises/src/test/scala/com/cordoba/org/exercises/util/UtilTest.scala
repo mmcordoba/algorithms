@@ -11,17 +11,22 @@ import org.scalatest.junit.JUnitRunner
 class UtilTest extends FunSuite with BeforeAndAfter {
 
 
-    var utilFunctions = new UtilFunctions
+  var utilFunctions = new UtilFunctions
 
 
-    test("Should Return Zero") {
-      val s = ""
-      assert(0 == utilFunctions.count(s, 'a'))
-    }
+  test("Should Return Zero") {
+    val s = ""
+    assert(0 == utilFunctions.count(s, 'a'))
+  }
 
-    test("Should count 3") {
-      val s = "a casa is not in the prire"
-      assert(3 == utilFunctions.count(s, 'a'))
-    }
+  test("Should count 3") {
+    val s = "a casa is not in the prire"
+    assert(3 == utilFunctions.count(s, 'a'))
+  }
+
+  test("Should reverse input") {
+    val s = "reversable"
+    assert("elbasrever".equals(utilFunctions.reverse(s)))
+  }
 
 }
