@@ -1,5 +1,4 @@
-
-import com.cordoba.org.exercises.scala.UtilFunctions;
+import com.cordoba.org.exercises.util.UtilFunctions
 
 object Main extends App {
 
