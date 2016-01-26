@@ -9,8 +9,8 @@ class QuickFind(val size: Integer) {
   val store = new Array[Integer](size)
   for(i <- store.indices) store(i) = i
 
-  def root(i: Integer) : Integer = {
 
+  def root(i: Integer) : Integer = {
     var currentIndex = i
     var root = store(currentIndex)
     while (root != currentIndex) {

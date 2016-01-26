@@ -44,4 +44,25 @@ class QuickFindTests extends FunSuite with BeforeAndAfter {
     assert(!quickFind.isConnected(4,2))
 
   }
+
+  test("QuickFind for a 7 node")  {
+
+    val quickFind = new QuickFindWeight(7)
+
+    quickFind.connect(0,1)
+    quickFind.connect(0,2)
+
+    quickFind.connect(4,5)
+    quickFind.connect(4,6)
+    quickFind.connect(6,3)
+
+    assert(quickFind.isConnected(4,6))
+    assert(quickFind.isConnected(2,1))
+    assert(quickFind.isConnected(5,3))
+    assert(!quickFind.isConnected(0,5))
+
+
+    quickFind.connect(1,6)
+    assert(quickFind.isConnected(0,5))
+  }
 }
