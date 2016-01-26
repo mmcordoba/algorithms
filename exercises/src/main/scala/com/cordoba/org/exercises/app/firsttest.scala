@@ -1,3 +1,5 @@
+package com.cordoba.org.exercises.app
+
 import com.cordoba.org.exercises.util.UtilFunctions
 
 object Main extends App {

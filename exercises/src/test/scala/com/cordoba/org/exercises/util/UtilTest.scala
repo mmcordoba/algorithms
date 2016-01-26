@@ -29,4 +29,8 @@ class UtilTest extends FunSuite with BeforeAndAfter {
     assert("elbasrever".equals(utilFunctions.reverse(s)))
   }
 
+  test("Concat reversed") {
+    assert("es ar".equals(utilFunctions.concatReverse("se", "ra ")))
+  }
+
 }

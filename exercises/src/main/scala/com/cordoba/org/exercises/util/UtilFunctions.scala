@@ -11,4 +11,11 @@ class UtilFunctions {
   def count(s: String, c: Char) =
     s.filter( (actual: Char) => actual.equals(c)).length
 
+
+  def concatReverse(s1: String, s2: String) : String  = {
+    val s1Reversed = reverse (s1)
+    val s2Reversed = reverse (s2)
+    s1Reversed + s2Reversed
+  }
+
 }

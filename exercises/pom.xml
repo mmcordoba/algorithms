@@ -31,11 +31,11 @@
               <version>2.12</version>
               <configuration>
                   <includes>
-                      <include>**/*Suite.class</include>
-                      <include>**/*Test.class</include>
-                      <include>**/*Tests.class</include>
-                      <include>**/*Spec.class</include>
-                      <include>**/*Specs.class</include>
+                      <include>**/*Suite.*</include>
+                      <include>**/*Test.*</include>
+                      <include>**/*Tests.*</include>
+                      <include>**/*Spec.*</include>
+                      <include>**/*Specs.*</include>
                   </includes>
               </configuration>
             </plugin>
