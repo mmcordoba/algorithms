@@ -19,14 +19,14 @@ package com.cordoba.org.exercises.datastructures
   */
 class DeQueue[T] {
 
-  class Node[T](in : => T) {
+  private class Node[T](in : => T) {
     var next : Node[T] = null
     var front : Node[T] = null
     var value = in
   }
 
-  var head : Node[T] = null
-  var tail : Node[T] = null
+  private var head : Node[T] = null
+  private var tail : Node[T] = null
   var size = 0
 
   def isEmpty : Boolean = size == 0
