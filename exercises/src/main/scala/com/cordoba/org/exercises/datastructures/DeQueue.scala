@@ -19,10 +19,10 @@ package com.cordoba.org.exercises.datastructures
   */
 class DeQueue[T] {
 
-  private class Node[T](in : => T) {
-    var next : Node[T] = null
-    var front : Node[T] = null
-    var value = in
+  private class Node[N](in : N) {
+    var next : Node[N] = null
+    var front : Node[N] = null
+    val value = in
   }
 
   private var head : Node[T] = null
@@ -52,7 +52,6 @@ class DeQueue[T] {
   }
 
   private def addLast(last: Node[T]) = {
-
     if (last == null) {
       head = last
       tail = last
